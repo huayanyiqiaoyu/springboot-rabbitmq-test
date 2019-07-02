@@ -1,7 +1,7 @@
 ## springboot整合rabbitmq的基本配置
 spring:
   rabbitmq:
-    addresses: 192.168.221.128:5672
+    addresses: 10.169.16.19:5672
     username: guest
     password: guest
     virtual-host: /
@@ -9,6 +9,7 @@ spring:
     listener:
       simple:
         concurrency: 5
+        ## manual:手动 ack（确认）
         acknowledge-mode: manual
         max-concurrency: 10
         prefetch: 1

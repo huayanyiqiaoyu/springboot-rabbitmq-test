@@ -1,6 +1,6 @@
 spring:
   rabbitmq:
-    addresses: 192.168.221.128:5672
+    addresses: 10.169.16.19:5672
     username: guest
     password: guest
     virtual-host: /
